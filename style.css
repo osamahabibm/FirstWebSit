@@ -594,6 +594,8 @@ width: 60%;
     margin: .8rem 0;
 }
 
+
+
 .contact .input-box .input-field input,
 .contact  .texterea-field textarea{
     width: 100%;
@@ -603,9 +605,9 @@ width: 60%;
     color: var(--text-color);
     background: transparent;
     border-radius: .6rem;
-    border:  .2rem solid var(--main-color);
+    border: .2rem solid var(--main-color);
     resize: none;
-    z-index: 1;
+    z-index: 0;
 }
 
 .contact .input-box .input-field input::placeholder,
@@ -630,7 +632,6 @@ width: 60%;
 .contact form .texterea-field textarea:focus~.focus,
 .contact form .texterea-field textarea:valid~.focus{
 width: 100%;
-
 }
 
 .contact form .texterea-field{
@@ -735,6 +736,10 @@ section:nth-child(odd) .animate.scroll,
 
 .education .education-box .animate.scroll{
 width: 105%;
+}
+
+.about .about-img .animate.scroll{
+width: 110%;
 }
 
 .about.show-animate .animate.scroll,

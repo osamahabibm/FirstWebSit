@@ -28,10 +28,10 @@ window.onscroll = ()=>{
             sec.classList.add('show-animate');
         }
 
-        // if want to animation that repate on scroll use this
-         else(
-            sec.classList.remove('show-animate')
-            )
+        // // if want to animation that repate on scroll use this
+        //  else(
+        //     sec.classList.remove('show-animate')
+        //     )
     });
 
     // Sticky header
@@ -39,13 +39,14 @@ window.onscroll = ()=>{
     header.classList.toggle('sticky',window.scrollY > 100)
 
     // remove toggle icon and navbar when click navbar links (scroll)
-
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active'); 
 
     // animation footer on scroll
 
+   
     let footer = document.querySelector('footer');
-    footer.classList.toggle('show-animate', this.innerHeight + this.scrollY
+    footer.classList.add('show-animate', this.innerHeight + this.scrollY
     >= document.scrollingElement.scrollHeight);
+  
 }
